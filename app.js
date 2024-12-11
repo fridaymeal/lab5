@@ -51,7 +51,6 @@ function checkCookies() {
 
 // 4
 function alignBlocks() {
-  // Задаємо вирівнювання по правому краю для block2 і block4
   document.querySelector('.block2').style.textAlign = 'right';
   document.querySelector('.block4').style.textAlign = 'right';
 
