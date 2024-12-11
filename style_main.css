@@ -263,6 +263,13 @@ body {
   font-style: italic;
 }
 
+.dynamic-list {
+  overflow-y: auto;
+  max-height: 100px;
+  margin-top: 10px;
+  padding: 0;
+  width: 20%;
+}
 
 @media (max-width: 1400px) {
   .container {
