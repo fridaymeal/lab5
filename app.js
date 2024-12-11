@@ -32,13 +32,11 @@ function findDivisors() {
   }
   alert(`Divisors: ${divisors.join(', ')}`);
   document.cookie = `divisors=${divisors.join(', ')}; path=/;`;
-  document.querySelector('.block3 .divisors-output').textContent = `Divisors saved: ${divisors.join(', ')}`;
 }
 
 function checkCookies() {
   const cookies = document.cookie.split('; ').find(row => row.startsWith('divisors='));
   if (cookies) {
-    const divisors = cookies.split('=')[1];
     if (confirm('Cookies found. Do you want to delete them?')) {
       document.cookie = 'divisors=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
       alert('Cookies deleted. Form reset.');
